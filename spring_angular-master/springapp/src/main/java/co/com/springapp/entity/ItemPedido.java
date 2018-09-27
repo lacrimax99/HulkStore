@@ -2,6 +2,10 @@ package co.com.springapp.entity;
 
 import java.io.Serializable;
 
+/**
+ * Clase que representa un item del pedido.
+ * @author fbedoya
+ */
 public class ItemPedido implements Serializable {
 	
 	/**

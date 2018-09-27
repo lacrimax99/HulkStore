@@ -10,12 +10,12 @@ public class Producto implements Serializable{
 	private static final long serialVersionUID = 2505298275117259266L;
 
 	/**
-	 * C�digo del producto.
+	 * Código del producto.
 	 */
 	String codigo;
 
 	/**
-	 * Descripci�n del producto.
+	 * Descripción del producto.
 	 */
 	String descripcion;
 	
@@ -44,6 +44,9 @@ public class Producto implements Serializable{
 	 */
 	String imageUrl2;
 	
+	/**
+	 * Valida si el producto esta seleccionado.
+	 */
 	boolean seleccionado;
 	
 	public Producto() {

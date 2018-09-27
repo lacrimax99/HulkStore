@@ -29,7 +29,7 @@ import co.com.springapp.interfaces.IPedidoService;
 @CrossOrigin(origins = "*")
 public class TiendaController {
 	
-	/** Instancia del servicio de competencias. */
+	/** Instancia del servicio de pedido. */
 	@Autowired
 	private IPedidoService pedidoService;
 

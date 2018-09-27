@@ -1,17 +1,20 @@
 package co.com.springapp.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.springframework.stereotype.Service;
 
 import co.com.springapp.CargarDatos;
-import co.com.springapp.entity.Pedido;
 import co.com.springapp.entity.ItemPedido;
+import co.com.springapp.entity.Pedido;
 import co.com.springapp.entity.PedidoResponse;
 import co.com.springapp.entity.Producto;
 import co.com.springapp.interfaces.IPedidoService;
 
+/**
+ * Servicio para registrar un pedido.
+ * @author fbedoya
+ */
 @Service
 public class PedidoService implements IPedidoService {
 

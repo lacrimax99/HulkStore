@@ -48,10 +48,13 @@ public class CargarDatos {
 				"../assets/images/todo1/0003-A.jpg", "../assets/images/todo1/0003-B.jpg");
 		Producto producto4 = new Producto("0004", "Estilo nuevo en tendencia.", "Camisa Hombre Araña", 40000, 25,
 				"../assets/images/todo1/0004-A.jpg", "../assets/images/todo1/0004-B.jpg");
+		Producto producto5 = new Producto("0005", "Estilo nuevo en tendencia.", "Camisa Holk", 40000, 5,
+				"../assets/images/todo1/0005-A.jpg", "../assets/images/todo1/0005-B.jpg");
 		mapaproductos.put("0001", producto1);
 		mapaproductos.put("0002", producto2);
 		mapaproductos.put("0003", producto3);
 		mapaproductos.put("0004", producto4);
+		mapaproductos.put("0005", producto5);
 	}
 
 	/**
