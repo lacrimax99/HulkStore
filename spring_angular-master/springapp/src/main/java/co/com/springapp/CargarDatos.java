@@ -40,14 +40,14 @@ public class CargarDatos {
 	}
 
 	private static void cargarProductos() {
-		Producto producto1 = new Producto("0001", "Estilo nuevo en tendencia.", "Camisa Capitan America", 25000, 0,
+		Producto producto1 = new Producto("0001", "Estilo nuevo en tendencia.", "Camisa Capitan America", 25000, 10,
 				"../assets/images/todo1/0001-A.jpg", "../assets/images/todo1/0001-B.jpg");
 		Producto producto2 = new Producto("0002", "Estilo nuevo en tendencia.", "Camisa Thor", 30000, 15,
-				"../assets/images/todo1/0001-A.jpg", "../assets/images/todo1/0001-B.jpg");
+				"../assets/images/todo1/0002-A.jpg", "../assets/images/todo1/0002-B.jpg");
 		Producto producto3 = new Producto("0003", "Estilo nuevo en tendencia.", "Camisa Linterna Verde", 35000, 20,
-				"../assets/images/todo1/0001-A.jpg", "../assets/images/todo1/0001-B.jpg");
+				"../assets/images/todo1/0003-A.jpg", "../assets/images/todo1/0003-B.jpg");
 		Producto producto4 = new Producto("0004", "Estilo nuevo en tendencia.", "Camisa Hombre Araña", 40000, 25,
-				"../assets/images/todo1/0001-A.jpg", "../assets/images/todo1/0001-B.jpg");
+				"../assets/images/todo1/0004-A.jpg", "../assets/images/todo1/0004-B.jpg");
 		mapaproductos.put("0001", producto1);
 		mapaproductos.put("0002", producto2);
 		mapaproductos.put("0003", producto3);
