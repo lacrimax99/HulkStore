@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
-  urlbaseProducto: 'http://localhost:8080/data/',
+  urlbaseProducto: 'http://localhost:8080/tienda/',
   urlbasePedido: 'http://localhost:8080/tienda/',
   baseUrlAssets: '../assets/',
   usemock: false

@@ -4,7 +4,7 @@
   <div class="card-body">
     <h5 class="card-title">{{producto.categoria}} {{producto.codigo}}</h5>
     <p class="card-text">{{producto.descripcion}}</p>
-    <p class="card-text">{{producto.stock}}</p>
+    <p class="card-text">Cantidad Disponible : <b>{{producto.stock}}</b></p>
  <a (click)="onSeleccionar()" class="btn {{producto.seleccionado ? 'btn-danger':'btn-success'}}">
  	{{producto.seleccionado ? 'Quitar':'Seleccionar'}}</a>
   </div>
