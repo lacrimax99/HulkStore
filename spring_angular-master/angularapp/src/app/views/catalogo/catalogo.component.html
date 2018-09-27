@@ -1,0 +1,11 @@
+<p>
+  Selecciona Tus Productos Para un Pedido!
+</p>
+
+
+<div class="card-columns">
+
+	<div class="card" *ngFor="let producto of getProductos() | async">
+		<app-producto (agregarItem)="agregarProducto($event)" [producto]=producto ></app-producto>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card">
+  <img class="card-img-top imagenproducto" [src]="imageUrl" alt="Card image cap">
+  <div class="card-header bg-light mb-3"><h5>{{producto.precio | currency}}</h5></div>
+  <div class="card-body">
+    <h5 class="card-title">{{producto.categoria}} {{producto.codigo}}</h5>
+    <p class="card-text">{{producto.descripcion}}</p>
+    <p class="card-text">{{producto.stock}}</p>
+ <a (click)="onSeleccionar()" class="btn {{producto.seleccionado ? 'btn-danger':'btn-success'}}">
+ 	{{producto.seleccionado ? 'Quitar':'Seleccionar'}}</a>
+  </div>
+</div>

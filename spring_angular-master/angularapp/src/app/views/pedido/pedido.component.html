@@ -1,0 +1,60 @@
+<div class="card text-center">
+	<div class="card-header">
+		<img class="card-img-top" [src]="logo" alt="logo"
+			style="width: 18rem;">
+		<h1>{{title}}</h1>
+	</div>
+	<div class="card-body">
+		<p class="lead">
+			Realice su pedido a continuación: <br> (Los productos se deben
+			seleccionar en el catálogo)
+		</p>
+	</div>
+</div>
+<br>
+<div class="card">
+	<label>Productos Seleccionados</label>
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-primary"
+			*ngFor="let producto of getProductosSeleccionados() | async">{{producto.categoria}}
+			- {{producto.codigo}} ({{producto.precio | currency}})
+			<button type="button" class="close" aria-label="Close"
+				(click)="producto.seleccionado = false;">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</li>
+		<li *ngIf="(count() | async) > 0"
+			class="list-group-item list-group-item-success"><b>Cantidad:
+		</b> {{count() | async}} - <b>Total:</b> {{suma() | async | currency}}</li>
+		<li *ngIf="(count() | async) <= 0"
+			class="list-group-item list-group-item-danger">No has
+			seleccionado productos en el catálogo.</li>
+	</ul>
+</div>
+<br>
+
+<form class="mx-auto" style="max-width: 30rem"  [formGroup]="profileForm">
+	<div class="form-group">
+		<div class="form-row">
+			<label >Datos Personales:</label>
+			<input type="text" class="form-control" placeholder="Nombres" formControlName="nombres">
+			<div class="invalid-feedback">Please provide a valid city.</div>
+			<input type="text" class="form-control" placeholder="Apellidos" formControlName="apellidos">
+			<select class="form-control" formControlName="tipoDocumento">
+				<option [selected]="true">Cédula de Ciudadania</option>
+				<option>Nit</option>
+				<option>Cédula de Extranjería</option>
+				<option>Otro</option>
+			</select> 
+			<input type="text" class="form-control" placeholder="Identificación" formControlName="identificacion" />
+			<br><br>
+			<label>Datos Para la Entrega:</label>
+			<input type="text" class="form-control"	placeholder="Dirección" formControlName="direccion" />
+			<input type="date" class="form-control"	formControlName="fecha" />
+		</div>
+
+	</div>
+	<button class="btn btn-outline-success my-2 my-sm-0" (click)="finalizarPedido()">Comprar</button>
+</form>
+
+<br><br>
